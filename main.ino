@@ -26,7 +26,7 @@ extern uint8_t SmallFont[]; // Базовый шрифт без поддержк
 #define SHOW_PREASSURE    2
 #define SHOW_ALTITUDE     3
 int state = SHOW_VERSION;
-int nextSwitch = 0;
+unsigned long nextSwitch = 0;
 
 void setup(){
   Serial.begin(9600);
